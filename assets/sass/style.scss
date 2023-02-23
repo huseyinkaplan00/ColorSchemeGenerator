@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 *,
 *::before,
 *::after {
@@ -97,22 +98,9 @@ body {
       .colorPalette {
         width: 100%;
         height: 100vh;
-      }
-      .color1 {
-        background: #f55a5a;
-      }
-
-      .color2 {
-        background: #2b283a;
-      }
-      .color3 {
-        background: #fbf3ab;
-      }
-      .color4 {
-        background: #aad1b6;
-      }
-      .color5 {
-        background: #a626d3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
     .colorValues {
@@ -155,11 +143,29 @@ input {
 
 //global choices
 .d-none {
-  display: none;
+  display: none !important;
 }
-
 .copied {
+  background-color: rgb(225 191 191 / 40%);
+  height: 100vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  box-shadow: inset -1px 13px 20px 0px black;
   justify-content: center;
+  p {
+    color: #f1ecec;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    background: #00000080;
+    width: 75%;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Luckiest Guy", cursive;
+  }
+  img {
+    width: 100%;
+  }
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 *,
 *::before,
 *::after {
@@ -102,21 +103,9 @@ body {
 .container main .mainColors .colorPalette {
   width: 100%;
   height: 100vh;
-}
-.container main .mainColors .color1 {
-  background: #f55a5a;
-}
-.container main .mainColors .color2 {
-  background: #2b283a;
-}
-.container main .mainColors .color3 {
-  background: #fbf3ab;
-}
-.container main .mainColors .color4 {
-  background: #aad1b6;
-}
-.container main .mainColors .color5 {
-  background: #a626d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container main .colorValues {
   display: flex;
@@ -154,11 +143,30 @@ input {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .copied {
+  background-color: rgba(225, 191, 191, 0.4);
+  height: 100vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  box-shadow: inset -1px 13px 20px 0px black;
   justify-content: center;
+}
+.copied p {
+  color: #f1ecec;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.5019607843);
+  width: 75%;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Luckiest Guy", cursive;
+}
+.copied img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
