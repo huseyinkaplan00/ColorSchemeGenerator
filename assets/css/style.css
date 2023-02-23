@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+.container header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+.container header input {
+  width: 61px;
+  height: 43px;
+}
+.container header form select {
+  padding-left: 13px;
+  color: #d5d4d8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: none;
+  width: 312px;
+  height: 42px;
+  left: 87px;
+  top: 24px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("/assets/img/iconOne.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8125em top 50%;
+  background-size: 0.65rem auto;
+}
+.container header form select:focus {
+  outline: none;
+}
+.container header form select option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  line-height: 25px;
+  background: #1f2937;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px;
+}
+.container header form select option :checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("/assets/img/Icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.8125em top 50%;
+  background-size: 0.65rem auto;
+}
+.container header form button {
+  background: #3d4b60;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 13px 11px;
+  border: 0;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+.container main .mainColors {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .container main .mainColors {
+    flex-direction: row;
+  }
+}
+.container main .mainColors .colorPalette {
+  width: 100%;
+  height: 100vh;
+}
+.container main .mainColors .color1 {
+  background: #f55a5a;
+}
+.container main .mainColors .color2 {
+  background: #2b283a;
+}
+.container main .mainColors .color3 {
+  background: #fbf3ab;
+}
+.container main .mainColors .color4 {
+  background: #aad1b6;
+}
+.container main .mainColors .color5 {
+  background: #a626d3;
+}
+.container main .colorValues {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 46px;
+  z-index: 999;
+  background: #1f2937;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+.container main .colorValues .mobileCode,
+.container main .colorValues .colorCode {
+  width: 20%;
+  color: #d5d4d8;
+}
+@media (min-width: 768px) {
+  .container main .colorValues .mobileCode {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container main .colorValues .colorCode {
+    display: none;
+  }
+}
+
+select,
+button,
+input {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
+
+.copied {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

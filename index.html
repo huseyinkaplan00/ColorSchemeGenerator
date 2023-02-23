@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- data meta tags -->
+    <meta
+      name="description"
+      content="Color Picker, Pick Your Favourite Color"
+    />
+    <meta name="keywords" content="color picker, pick a color, colors" />
+    <meta name="author" content="Huseyin Kaplan" />
+    <title>Color Scheme Generator</title>
+    <!-- favicon -->
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <input id="inputColor" type="color" />
+        <form id="form" action="#">
+          <select name="colors" id="colors" class="colors-names">
+            <option value="monochrome">
+              Monochrome <img src="./assets/img/iconTwo.svg" alt="" />
+            </option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+          <button id="submitBtn" type="submit">Get color scheme</button>
+        </form>
+      </header>
+      <main>
+        <div class="mainColors">
+          <div class="colorPalette color1 copied"></div>
+          <div class="colorPalette color2"></div>
+          <div class="colorPalette color3"></div>
+          <div class="colorPalette color4"></div>
+          <div class="colorPalette color5"></div>
+        </div>
+        <div class="colorValues">
+          <div class="mobileCode">asdasd</div>
+          <div class="colorCode colorCode1">#F55A5A</div>
+          <div class="colorCode colorCode2">#2B283A</div>
+          <div class="colorCode colorCode3">#FBF3AB</div>
+          <div class="colorCode colorCode4">#AAD1B6</div>
+          <div class="colorCode colorCode5">#A626D3</div>
+        </div>
+      </main>
+    </div>
+    <!-- main script file -->
+    <script src="/assets/index.js"></script>
+  </body>
+</html>
