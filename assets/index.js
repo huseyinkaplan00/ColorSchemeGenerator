@@ -14,6 +14,27 @@ function gettingColor() {
         colors.push(data.colors[i].hex.value);
       }
 
+      const mobileCode = document.querySelector(".mobileCode");
+      const scroll = document.documentElement;
+      window.addEventListener("scroll", () => {
+        if (scroll.scrollTop > 2500) {
+          mobileCode.textContent = colors[5];
+          mobileCode.style.background = colors[5];
+        } else if (scroll.scrollTop > 2000) {
+          mobileCode.textContent = colors[4];
+          mobileCode.style.background = colors[4];
+        } else if (scroll.scrollTop > 1500) {
+          mobileCode.textContent = colors[3];
+          mobileCode.style.background = colors[3];
+        } else if (scroll.scrollTop > 650) {
+          mobileCode.textContent = colors[2];
+          mobileCode.style.background = colors[2];
+        } else if (scroll.scrollTop > 400) {
+          mobileCode.textContent = colors[1];
+          mobileCode.style.background = colors[1];
+        }
+      });
+
       for (let i = 1; i < colors.length; i++) {
         document.querySelector(`.color${i}`).style.background = colors[i];
         document.querySelector(`.colorCode${i}`).textContent = colors[i];
@@ -70,3 +91,9 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   gettingColor();
 });
+
+const fixedHeight = () => {
+  const el = document.querySelector(".mainColors");
+  el.style.minHeight = window.innerHeight + "px";
+};
+fixedHeight();
