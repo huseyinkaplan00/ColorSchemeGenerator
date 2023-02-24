@@ -16,20 +16,22 @@ function gettingColor() {
 
       const mobileCode = document.querySelector(".mobileCode");
       const scroll = document.documentElement;
+      mobileCode.textContent = colors[1];
+      mobileCode.style.background = colors[1];
       window.addEventListener("scroll", () => {
-        if (scroll.scrollTop > 2500) {
+        if (scroll.scrollTop > 2300) {
           mobileCode.textContent = colors[5];
           mobileCode.style.background = colors[5];
-        } else if (scroll.scrollTop > 2000) {
+        } else if (scroll.scrollTop > 1550) {
           mobileCode.textContent = colors[4];
           mobileCode.style.background = colors[4];
-        } else if (scroll.scrollTop > 1500) {
+        } else if (scroll.scrollTop > 800) {
           mobileCode.textContent = colors[3];
           mobileCode.style.background = colors[3];
-        } else if (scroll.scrollTop > 650) {
+        } else if (scroll.scrollTop > 50) {
           mobileCode.textContent = colors[2];
           mobileCode.style.background = colors[2];
-        } else if (scroll.scrollTop > 400) {
+        } else if (scroll.scrollTop >= 0) {
           mobileCode.textContent = colors[1];
           mobileCode.style.background = colors[1];
         }
