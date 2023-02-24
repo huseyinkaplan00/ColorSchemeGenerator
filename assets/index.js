@@ -18,25 +18,47 @@ function gettingColor() {
         document.querySelector(`.color${i}`).style.background = colors[i];
         document.querySelector(`.colorCode${i}`).textContent = colors[i];
       }
+
+      let contentCopied = `  <div class="copied">
+      <p id="copiedText">🪄 <br />copied your <br /> HEX VALUE <br />🪄</p>
+    </div>`;
+
+      const copyClipboard = () => {
+        for (let i = 1; i < colors.length; i++) {
+          setTimeout(() => {
+            document.querySelector(`.color${[i]}`).innerHTML = "";
+          }, 1200);
+        }
+      };
       document.addEventListener("click", (e) => {
         if (e.target.classList.contains("color1")) {
           navigator.clipboard.writeText(colors[1]);
+          document.querySelector(".color1").innerHTML = contentCopied;
+          copyClipboard();
         } else if (e.target.classList.contains("colorCode1")) {
           navigator.clipboard.writeText(colors[1]);
         } else if (e.target.classList.contains("color2")) {
           navigator.clipboard.writeText(colors[2]);
+          document.querySelector(".color2").innerHTML = contentCopied;
+          copyClipboard();
         } else if (e.target.classList.contains("colorCode2")) {
           navigator.clipboard.writeText(colors[2]);
         } else if (e.target.classList.contains("color3")) {
           navigator.clipboard.writeText(colors[3]);
+          document.querySelector(".color3").innerHTML = contentCopied;
+          copyClipboard();
         } else if (e.target.classList.contains("colorCode3")) {
           navigator.clipboard.writeText(colors[3]);
         } else if (e.target.classList.contains("color4")) {
           navigator.clipboard.writeText(colors[4]);
+          document.querySelector(".color4").innerHTML = contentCopied;
+          copyClipboard();
         } else if (e.target.classList.contains("colorCode4")) {
           navigator.clipboard.writeText(colors[4]);
         } else if (e.target.classList.contains("color5")) {
           navigator.clipboard.writeText(colors[5]);
+          document.querySelector(".color5").innerHTML = contentCopied;
+          copyClipboard();
         } else if (e.target.classList.contains("colorCode5")) {
           navigator.clipboard.writeText(colors[5]);
         }

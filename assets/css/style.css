@@ -101,11 +101,23 @@ body {
   }
 }
 .container main .mainColors .colorPalette {
+  cursor: pointer;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.6s all;
+  box-shadow: inset -8px -10px 9px 7px rgba(27, 24, 24, 0.03);
+}
+.container main .mainColors .colorPalette:first-child:hover {
+  box-shadow: inset rgb(27, 24, 24) 7px -6px 20px 0px;
+}
+.container main .mainColors .colorPalette:last-child:hover {
+  box-shadow: inset -9px 19px 20px 0px rgba(27, 24, 24, 0.66);
+}
+.container main .mainColors .colorPalette:hover {
+  box-shadow: 2px -3px 9px 7px rgba(27, 24, 24, 0.3882352941);
 }
 .container main .colorValues {
   display: flex;
@@ -147,13 +159,12 @@ input {
 }
 
 .copied {
-  background-color: rgba(225, 191, 191, 0.4);
+  background-color: rgba(255, 253, 253, 0.319);
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: inset -1px 13px 20px 0px black;
   justify-content: center;
 }
 .copied p {
@@ -166,7 +177,4 @@ input {
   padding: 20px;
   border-radius: 5px;
   font-family: "Luckiest Guy", cursive;
-}
-.copied img {
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */
