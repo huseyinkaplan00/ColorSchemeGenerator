@@ -20,7 +20,7 @@ body {
     top: 0;
     width: 100%;
     height: 90px;
-    background: #1f2937;
+    background: #1f2937b0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,11 +148,10 @@ body {
       text-align: center;
       position: fixed;
       bottom: 0;
-
       width: 100%;
       height: 46px;
       z-index: 999;
-      background: #1f2937;
+      background: #1f2937b0;
       box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
       .mobileCode,
       .colorCode {
