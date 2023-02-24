@@ -1,7 +1,6 @@
 const form = document.getElementById("form");
 const dropDownColor = document.getElementById("colors");
 const hex = document.getElementById("inputColor");
-
 function gettingColor() {
   let hexReplace = hex.value.replace("#", "");
   fetch(
@@ -13,7 +12,6 @@ function gettingColor() {
       for (let i = 0; i <= 5; i++) {
         colors.push(data.colors[i].hex.value);
       }
-
       const mobileCode = document.querySelector(".mobileCode");
       const scroll = document.documentElement;
       mobileCode.textContent = colors[1];
@@ -93,7 +91,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   gettingColor();
 });
-
 const fixedHeight = () => {
   const el = document.querySelector(".mainColors");
   el.style.minHeight = window.innerHeight + "px";
