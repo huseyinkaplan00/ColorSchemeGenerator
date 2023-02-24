@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
 const dropDownColor = document.getElementById("colors");
 const hex = document.getElementById("inputColor");
-alert("çalistşi");
+
 function gettingColor() {
   let hexReplace = hex.value.replace("#", "");
   fetch(
